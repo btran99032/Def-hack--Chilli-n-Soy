@@ -1,5 +1,5 @@
 #Chill n Soy.py
-#By Norman and Ben
+#By Alex and Ben Tran
 
 from pygame import *
 from pygame.mixer import *
