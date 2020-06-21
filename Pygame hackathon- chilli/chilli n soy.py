@@ -94,15 +94,7 @@ def tutorial_instruct(m,colour):
 #------------------------------The transitions to the game--------------------------------------------------
 
 def menu():
-    global transition#I implemented the function becausewe need to transition between different scenes of the game
-    #the function global works like this, variables inside a function are local and cannot be accessed from the ouside code,
-    #by using global Keyword we can call on the specified function, for this game we need to transition between levels and menu screen
-    #using global transition in this code everytime i make a level and put it in i can later on make if statements calling the "public" word (transition) to call on other functions to open
-    # like calling if transition=="Menu":  menu() which means that it's going to run the function menu() which shows the menu screen because
-    #the transition was already applied as "Menu" above. Also, if a button was pressed on the menu screen it would bring you to the next level using
-    #the global transition will now be defined as the next level instead of "Menu" this is how you change a open variable in a function that only creates LOCAL variable that only work in that function
-    #I found this wordkey while reasearching how to change screen on python on many websites, this one shows the different rules for global :
-    #https://www.geeksforgeeks.org/global-keyword-in-python/
+    global transition
     menuB=image.load("background/MenuBack.png").convert()  
     menuB=transform.scale(menuB,(1280,720))
     screen.blit(menuB,(0,0))
